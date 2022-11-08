@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 350px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: large;
+  outline: none;
+}
+
+input[type="password"] .err,
+input[type="email"] .err{
+  border: 2px solid red;
+}
+
+.input-container input:focus,
+.input-container input:active {
+  padding-left: 10px;
+  border-color: transparent;
+  border-bottom: rgb(13, 158, 61) solid 2px;
+}
+
+button[type="submit"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgb(40, 199, 93);
+  border: rgb(8, 212, 76) solid 1px;
+  border-radius: 2px;
+  color: black;
+  padding: 10px 20px;
+}
+
+button[type="submit"] img{
+  width: 40px;
+  height: 40px;
+}
+
+button[type="submit"]:hover {
+  transition: 0.3s;
+  background-color: rgb(8, 212, 76);
+}
+
+/* -------------- NAVBAR ----------------- */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(17, 16, 15);
+  position: fixed;
+}
+
+.navbar .logo{
+  color: white;
+  font-size: xx-large;
+  word-spacing: 5px;
+  text-decoration: none;
+}
+
+.navbar .login-button{
+  padding: 10px 20px;
+
+  border: white solid 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .login-button:hover{
+  border: rgb(8, 212, 76) solid 1px;
+  color: rgb(8, 212, 76);
+  transition: 0.5s;
+}
+
+/* -------------- END NAVBAR ----------------- */
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.home span{
+  font-size: x-large;
+  font-weight: 500;
+  color: blue;
+}
+
+
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(78, 156, 104);
+}
+
+.form{
+  background-color: beige;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.form-login__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.form .button-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form span{
+  padding: 0 10px;
+}
+
+
+
+.profile-wrapper{
+  background-image: url('./asset/account-management.png');
+  background-size: cover;
+  object-fit: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile{
+  position: relative;
+  background-color: rgb(245, 245, 220, 0.8);
+  width: 900px;
+  height: 500px;
+  padding: 10px 20px;
+  border: beige solid 1px;
+  border-radius: 5px;
+}
+
+.profile-logo{
+  background-color: rgb(245, 245, 220, 0.9);
+  padding: 10px 20px;
+  position: absolute;
+  top: -5%;
+  left: 35%;
+  border-radius: 5px;
+}
+
+.profile-info{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-gap: 10px;
+}
+
+.profile-info__item{
+  margin-top: 110px;
+}
+
+.profile-info__item p{
+  font-size: 20px;
+}
